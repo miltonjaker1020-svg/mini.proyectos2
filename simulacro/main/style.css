@@ -1,0 +1,31 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+/* posible cambio de estilo para el h1, pero no es necesario */
+.login-form h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.hidden {
+    display: none;
+}
+
+.mensaje { padding: 10px; margin-bottom: 10px; border-radius: 4px; display: none; }
+.exito { background-color: #d4edda; color: #155724; }
+.error { background-color: #f8d7da; color: #721c24; }
