@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Manager",
+      "email": "manager@test.com",
+      "password": "123457",
+      "role": "manager"
+    },
+    {
+      "id": "2",
+      "name": "Collaborator",
+      "email": "user@test.com",
+      "password": "123456",
+      "role": "collaborator"
+    }
+  ],
+  "projects": [
+    {
+      "name": "nose",
+      "description": "eadadadadad",
+      "status": "Completed",
+      "assignedTo": "2",
+      "id": "C86OHafhfQ0"
+    },
+    {
+      "name": "nose",
+      "description": "eadadadadad",
+      "status": "In Progress",
+      "assignedTo": "2",
+      "id": "xbWEfd2uArc"
+    },
+    {
+      "name": "n22323232",
+      "description": "eadadadadad232323",
+      "status": "Archived",
+      "assignedTo": "2",
+      "id": "eSFULLedjik"
+    },
+    {
+      "name": "n22323232",
+      "description": "eadadadadad23232322",
+      "status": "In Progress",
+      "assignedTo": "2",
+      "id": "_KdYYi9ml8s"
+    },
+    {
+      "name": null,
+      "description": "ce2",
+      "status": "Completed",
+      "assignedTo": "2",
+      "id": "3ncgVtTKh_I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
