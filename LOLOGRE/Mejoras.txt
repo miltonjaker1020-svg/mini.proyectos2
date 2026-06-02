@@ -1,0 +1,20 @@
+🛠️ ¿Cómo se arregla para que quede una elegancia?1. Lo agregas a tu nuevo package.json:Solo tendrías que instalarlo corriendo esto en tu terminal:bashnpm install navigo
+Usa el código con precaución.2. Tu archivo de rutas se vuelve súper limpio y fácil de leer:Te olvidas de los pushState. Creas un enrutador que maneja todo de forma automática así:javascriptimport Navigo from 'navigo';
+
+// Creas el enrutador apuntando a la raíz de tu proyecto
+const router = new Navigo('/');
+
+router
+  .on('/login', () => {
+      renderLogin();
+  })
+  .on('/manager', () => {
+      renderManager();
+  })
+  .on('/collaborator', () => {
+      renderCollaborator();
+  })
+  .resolve(); // Activa el enrutador
+  
+Usa el código con precaución.Y listo. Cuando quieras mandar al usuario al panel de manager desde tu función de login, en vez de meter esa línea fea de pushState, solo escribes esto:javascriptrouter.navigate('/manager');
+Usa el código con precaución.¿Prefieres que dejemos el enrutamiento quieto por ahora y nos enfoquemos en terminar de conectar los formularios con tu base de datos de json-server, o quieres que montemos una estructura limpia de rutas para que el proyecto no se te vuelva un caos?
